@@ -9,4 +9,5 @@ else
     loadstring(game:HttpGet("https://raw.githubusercontent.com/StupidJson/AlchemyOnline-List/main/source.lua"))()
   else
     print("No game Detect")
+  end
 end
