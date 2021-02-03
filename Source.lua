@@ -1,12 +1,16 @@
 GameScripts = {
   RagdollEngine = {
-		PlaceIds = {2041312716},
+		PlaceID = {2041312716},
 		Loadstring = "https://raw.githubusercontent.com/StupidJson/RagdollEngine-List/main/source.lua",
 	},
   AlchemyOnline = {
-		PlaceIds = {5986049891},
+		PlaceID = {5986049891},
 		Loadstring = "https://raw.githubusercontent.com/StupidJson/AlchemyOnline-List/main/source.lua",
 	},
+  AdoptMe = {
+		PlaceID = {920587237},
+		Loadstring = "https://raw.githubusercontent.com/StupidJson/AdoptMe-List/main/source.lua",
+	}
 }
 
 function ExecuteScript(Code)
@@ -19,9 +23,9 @@ end
 
 wait(0.4)
 
-for _, Test in pairs(GameScripts) do
-		if table.find(Test.PlaceIds, game.PlaceId) then
-			ExploitExecute(Test.Loadstring)
+for _, GS in pairs(GameScripts) do
+		if table.find(Test.PlaceID, game.PlaceId) then
+			ExploitExecute(GS.Loadstring)
 			break
 		end
 end
