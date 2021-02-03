@@ -24,7 +24,7 @@ end
 wait(0.4)
 
 for _, GS in pairs(GameScripts) do
-		if table.find(Test.PlaceID, game.PlaceId) then
+		if table.find(GS.PlaceID, game.PlaceId) then
 			ExploitExecute(GS.Loadstring)
 			break
 		end
