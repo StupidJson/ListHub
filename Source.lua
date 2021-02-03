@@ -25,7 +25,7 @@ GameScripts = {
 
 for _, GS in pairs(GameScripts) do
 		if table.find(GS.PlaceId,game.PlaceId) then
-			PromptExecute(GS.Loadstring)
+			ExploitExecute(GS.Loadstring)
 			break
 		end
 end
