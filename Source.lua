@@ -37,3 +37,4 @@ end
 function ExecuteScript(Code)
 	loadstring(game:HttpGet(Code, true))()
 end
+print("Hi")
